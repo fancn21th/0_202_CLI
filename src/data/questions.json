@@ -1,5 +1,7 @@
 [
   {
-    "title": "what is your name"
+    "question": "what is the capital of china",
+    "options": ["beijing", "shanghai", "tianjin", "chongqing"],
+    "answer": "beijing"
   }
 ]
