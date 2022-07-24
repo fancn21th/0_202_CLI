@@ -1,1 +1,1 @@
-# 0_202_CLI
+# CLI DEMO

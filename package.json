@@ -1,0 +1,9 @@
+{
+  "name": "@fancn21th/qa-js",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/fancn21th/0_202_CLI.git",
+  "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
+  "license": "MIT",
+  "type": "module"
+}
