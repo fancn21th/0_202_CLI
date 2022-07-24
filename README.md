@@ -3,5 +3,5 @@
 ## setup
 
 ```shell
-yarn install
+npm install
 ```

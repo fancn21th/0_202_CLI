@@ -1,3 +1,4 @@
-import { askQuestion } from "./inquirer-3rd";
+import { askQuestion } from "./inquirer-3rd.js";
+// import { askQuestion } from "./nodejs-builtin.js";
 
-askQuestion();
+console.log(askQuestion());
