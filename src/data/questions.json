@@ -2,6 +2,8 @@
   {
     "question": "what is the capital of china",
     "options": ["beijing", "shanghai", "tianjin", "chongqing"],
-    "answer": "beijing"
+    "answer": "beijing",
+    "lastAnswerIsCorrect": true,
+    "lastAskedDateTime": "Mon Jul 25 2022 14:28:05 GMT+0800 (China Standard Time)"
   }
 ]

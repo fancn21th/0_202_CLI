@@ -2,6 +2,15 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 import fs from "fs/promises";
 
+function checkAnswer(input, answer) {
+  if (input === answer) {
+    console.log(chalk.green(`答案正确`));
+    return true;
+  }
+  console.log(chalk.red(`答案错误`));
+  return false;
+}
+
 async function askQuestion() {
   const questions = await fs.readFile("./src/data/questions.json");
 
@@ -19,12 +28,17 @@ async function askQuestion() {
   console.log(answers);
 
   parsedQuestions.forEach((question) => {
-    if (question.answer === answers[question.question]) {
-      console.log(chalk.green(`答案正确`));
-    } else {
-      console.log(chalk.red(`答案错误`));
-    }
+    question.lastAnswerIsCorrect = checkAnswer(
+      answers[question.question],
+      question.answer
+    );
+    question.lastAskedDateTime = Date().toString();
   });
+
+  await fs.writeFile(
+    "./src/data/questions.json",
+    JSON.stringify(parsedQuestions)
+  );
 }
 
 export { askQuestion };
